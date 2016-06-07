@@ -1,6 +1,9 @@
 #!/bin/bash
-m=$1 
-n=$2
+#m=$1 
+#n=$2
+m=25
+n=50
+
 while [ 1 ] ; 
 do
      c=`expr $m % $n`

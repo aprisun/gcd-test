@@ -1,11 +1,11 @@
 #!/bin/bash
 
-### test 1###
+### test 1## 
 echo 12 24 12 > /tmp/tmp-ans
 ./gcd.bash 12 24 > /tmp/tmp-out || echo "test finished"
 ans=/tmp/tmp-ans
 out=/tmp/tmp-out
-diff $ans $out 
+diff $ans $out || exit 1 
 
 echo OK
 rm -f /tmp/tmp-*

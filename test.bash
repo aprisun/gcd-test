@@ -39,7 +39,7 @@ echo -25 50 25 > $tmp-ans
 if [ -e $tmp-out ]; then
    diff $tmp-ans $tmp-out || ERROR_NOFILE "TEST1-2" 
 else
-   echo "tmp-out file is not found."
+   echo "Value has minus value. Please check your input value."
 fi
 
 ### test 2 -- Zero value###
@@ -48,7 +48,7 @@ echo 0 50 25 > $tmp-ans
 if [ -e $tmp-out ]; then
    diff $tmp-ans $tmp-out || ERROR_NOFILE "TEST2-2"
 else
-   echo "tmp-out file is not found."
+   echo "Value has 0 value. Please check your input value."
 fi
 
 ### test 3 -- Normal value## 

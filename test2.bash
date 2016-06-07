@@ -20,7 +20,7 @@ else
 fi
 
 echo OK
-rm -f /tmp/tmp-*
+rm -f $tmp-*
 exit 0
 
 

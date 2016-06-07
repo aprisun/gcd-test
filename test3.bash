@@ -15,7 +15,7 @@ echo 12 24 12 > $tmp-ans
 diff $tmp-ans $tmp-out || ERROR_EXIT "TEST3-2" 
 
 echo OK
-rm -f /tmp/tmp-*
+rm -f $tmp-*
 exit 0
 
 

@@ -10,7 +10,7 @@ ERROR_EXIT () {
 
 ### test 1## 
 echo 12 24 12 > /tmp/tmp-ans
-./gcd.bash 12 24 > /tmp/tmp-out || echo "test finished"
+./gcd.bash 12 24 > /tmp/tmp-out || ERROR_EXIT "TEST1-1"
 ans=/tmp/tmp-ans
 out=/tmp/tmp-out
 diff $ans $out || ERROR_EXIT "TEST1-1" 

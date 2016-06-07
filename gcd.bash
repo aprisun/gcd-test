@@ -7,12 +7,13 @@ then
     echo "one value has minus value"
     exit 1 
 else 
+  echo -n $m $n
   while [ 1 ] ; 
    do
       c=`expr $m % $n`
        	if [ $c -eq 0 ]
-       	  then
-	     echo $n $m $n
+       	  then 
+	     echo " "$n
 	     exit
          fi
            m=$n

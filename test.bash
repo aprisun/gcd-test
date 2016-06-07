@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ### test 1###
-echo 25 50 25 > /tmp/tmp-ans
-./gcd.bash 25 50 > /tmp/tmp-out || echo "test finished"
+echo 12 24 12 > /tmp/tmp-ans
+./gcd.bash 12 24 > /tmp/tmp-out || echo "test finished"
 ans=/tmp/tmp-ans
 out=/tmp/tmp-out
 diff $ans $out 

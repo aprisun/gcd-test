@@ -12,7 +12,5 @@ do
         m=$n
         n=$c
 done
+#exit 0
 
-exit 0
-
-echo $?

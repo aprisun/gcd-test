@@ -38,8 +38,6 @@ echo -25 50 25 > $tmp-ans
 ./gcd.bash -25 50 > $tmp-out || ERROR_MINUS "TEST1-1"
 if [ -e $tmp-out ]; then
    diff $tmp-ans $tmp-out || ERROR_NOFILE "TEST1-2" 
-else
-   echo "Value has minus value. Please check your input value."
 fi
 
 ### test 2 -- Zero value###
@@ -47,8 +45,6 @@ echo 0 50 25 > $tmp-ans
 ./gcd.bash 0 50 > $tmp-out || ERROR_ZERO "TEST2-1"
 if [ -e $tmp-out ]; then
    diff $tmp-ans $tmp-out || ERROR_NOFILE "TEST2-2"
-else
-   echo "Value has 0 value. Please check your input value."
 fi
 
 ### test 3 -- Normal value## 

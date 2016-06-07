@@ -1,9 +1,8 @@
 #!/bin/bash
-m=$1 
+m=$1
 n=$2
 if [ $m -le 0 ]
 then 
-    rm -f /tmp/tmp-ans
     echo "one value has minus value"
     exit 1 
 else 

@@ -1,7 +1,7 @@
 sudo: required
 language: generic
 script:
-  - sudo bash -e ./15745202.sh
+  - bash -e ./15745202.sh
 
 notifications:
   email:

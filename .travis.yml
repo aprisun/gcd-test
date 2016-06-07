@@ -1,7 +1,9 @@
+sudo: required
 language: generic
 script:
-  - bash -e ./15745202.sh
+  - sudo bash -e ./15745202.sh
 
 notifications:
   email:
     - a15z2hk@aiit.ac.jp
+

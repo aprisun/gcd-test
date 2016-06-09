@@ -11,12 +11,12 @@ ERROR_EXIT () {
 }
 
 ERROR_MINUS () {
-   echo "Value has minus value. Please check your input value."
+   echo "Input value has minus value. Please check your input value."
    rm -f $tmp-*
 }
 
 ERROR_ZERO () {
-   echo "Value has 0 value. Please check your input value."
+   echo "Input value has 0 value. Please check your input value."
    rm -f $tmp-*
 }
 
